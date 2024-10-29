@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { createSupplier } from "@/app/redux/slice/supplier/createSupplier"; // Adjust the path
 import { useAppDispatch } from "@/app/redux/hooks/Hooks";
 
-const page = () => {
+const Page = () => {
   const [supplierData, setSupplierData] = useState({
     id: "",
     name: "",
@@ -84,4 +84,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

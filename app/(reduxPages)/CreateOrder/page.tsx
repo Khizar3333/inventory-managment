@@ -5,7 +5,7 @@ import { AppDispatch, RootState } from '@/app/redux/store/store';
 import { createOrder } from '@/app/redux/slice/order/createOrder';
 import { useAppDispatch } from '@/app/redux/hooks/Hooks';
 
-const page = () => {
+const Page = () => {
   const [userId, setUserId] = useState('');
   const [items, setItems] = useState([{ productId: '', productname: '', category: '', quantity: 0, price: 0 }]);
   const dispatch = useAppDispatch();
@@ -128,4 +128,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

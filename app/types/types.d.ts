@@ -25,6 +25,7 @@ export interface Order {
 }
 
 export interface OrdersState {
+  status: string;
   orders: Order[];
   loading: boolean;
   error: string | null;

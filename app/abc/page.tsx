@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '@/app/redux/store/store';
 import { fetchOrders } from '@/app/redux/slice/order/order';
 import { useAppDispatch } from '@/app/redux/hooks/Hooks';
-import OrderList from '../(reduxPages)/SalesOrder/page';
+import OrderList from '../(reduxPages)/salesOrder/page';
 
 const page = () => {
   

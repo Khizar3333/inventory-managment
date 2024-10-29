@@ -6,7 +6,13 @@ import { addProduct } from '@/app/redux/slice/Inventory';
 import { useAppDispatch } from '@/app/redux/hooks/Hooks';
 import toast from 'react-hot-toast';
 
-const page = () => {
+interface InventoryState {
+  loading: boolean;
+  error: string | null;
+  // Add other properties as needed
+}
+
+const Page = () => {
   const dispatch = useAppDispatch();
   const { loading, error } = useSelector((state: RootState) => state.inventory);
 
@@ -105,4 +111,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
