@@ -6,6 +6,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 
 const initialState: OrdersState = {
+  status: 'idle',
   orders: [],
   loading: false,
   error: null,
