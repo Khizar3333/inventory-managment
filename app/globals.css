@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0px 10px; /* Adjust spacing as needed */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+  }
+  .Tbody tr {
+    border-top: 16px solid white ; 
+    border-bottom: 16px solid white ; 
+
+  }
+  
+  .Tbody tr:last-child {
+    border-bottom: none; /* Remove bottom border for the last row */
+  }
+  
+  /* Add padding to the table cells for visual space */
+  .td {
+    padding: 16px; /* Adjust padding as needed */
+  }
